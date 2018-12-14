@@ -18,7 +18,7 @@ sudo apt-get install nasm gcc
 
 ## Links
 * [NASM for MacOS:](http://macappstore.org/nasm/)
-* 32-bit architecture and printf: reminder - printf and scanf during execution change the values of registers eax and ecx.
+* 32-bit architecture and printf: reminder - printf and scanf during execution change the values of registers **eax** in **ecx**.
 * 64-bit architecture and printf: [printf](https://www.csee.umbc.edu/portal/help/nasm/sample_64.shtml#hello_64.asm)
 
 You can use also the [SASM](https://dman95.github.io/SASM/english.html):
