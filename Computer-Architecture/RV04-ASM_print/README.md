@@ -1,4 +1,6 @@
 # RV04: ASM_print
+
+### English🇬🇧🇺🇸
 Write an assembly program that outputs your name, surname, and email.
 
 Also implement this program in C++ language and describe the generated instructions which you get after using the following command:
@@ -28,7 +30,7 @@ You can use also the [SASM](https://dman95.github.io/SASM/english.html):
 
 ---
 
-## Slovenščina🇸🇮
+### Slovenščina🇸🇮
 
 V zbirnem jeziku napišite program, ki izpiše vaše ime, priimek in vpisno številko. 
 
