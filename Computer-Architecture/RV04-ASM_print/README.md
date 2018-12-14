@@ -37,7 +37,7 @@ Enak program implementirajte še v jeziku C/C++ in opišite generirane instrukci
 gcc -S program.cpp
 ```
 
-## Installing
+## Namestitev
 Če uporabljate operacijski sistem Windows dodajte okolijski spremenljivki PATH pot do programa NASM. Primer:
 ```
 set PATH =% PATH%;"C:\ NASM"
@@ -47,7 +47,7 @@ set PATH =% PATH%;"C:\ NASM"
 sudo apt-get install nasm gcc
 ```
 
-## Links
+## Povezave
 * [NASM - MacOS:](http://macappstore.org/nasm/)
 * 32-bitna arhitektura in **printf**: pazite - printf in scanf med izvajanjem spreminjata registra **eax** in **ecx**.
 * 64-bitna arhitektura in **printf**: [printf](https://www.csee.umbc.edu/portal/help/nasm/sample_64.shtml#hello_64.asm)
