@@ -1,0 +1,22 @@
+cryptool (starting example for the cryptool version family 1.x)
+
+cryptool is a comprehensive free educational program about cryptography and cryptanalysis
+offering extensive online help and many visualizations.
+
+this is a text file, created in order to help you to make your first steps with cryptool.
+
+1) as a first step it is recommended you read the included online help, this will provide a useful oversight of all available functions within this application. the starting page of the online help can be accessed via the menu "help -> starting page" at the top right of the screen or using the search keyword "starting page" within the index of the online help.
+press f1 to start the online help everywhere in cryptool.
+
+2) a possible next step would be to encrypt a file with the caesar algorithm. this can be done via the menu "crypt/decrypt -> symmetric (classic)".
+
+3) there are several examples (tutorials) provided within the online help which provide an easy way to gain an understanding of cryptology. these examples can be found via the menu "help -> scenarios (tutorials)".
+
+4) you can also develop your knowledge by: 
+- navigating through the menus. you can press f1 at any selected menu item to get further information.
+- reading the included readme file (see the menu "help -> readme").
+- viewing the included colorful presentation (this presentation can be found on several ways: e.g. in the "help" menu of this application, or via the "documentation" section found at the "starting" page of the online help).
+- viewing the webpage www.cryptool.org.
+
+july 2010
+the cryptool team

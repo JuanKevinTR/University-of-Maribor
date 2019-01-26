@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="860.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="20.0" prefHeight="48.0" prefWidth="860.0" style="-fx-background-color: #0E192B;" AnchorPane.bottomAnchor="624.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="38.0" fitWidth="35.0" onMouseClicked="#onViewFrequencyButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon_frenquency.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="38.0" fitWidth="35.0" onMouseClicked="#onViewComparisonButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon_comparison.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="512.0" layoutY="15.0" onMouseClicked="#onViewVisibleButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon_visible.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="38.0" fitWidth="35.0" onMouseClicked="#onViewEnDecryptButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon_encrypt.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="38.0" fitWidth="35.0" onMouseClicked="#onViewExitButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon_exit.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="43.0" prefHeight="31.0" prefWidth="554.0" snapToPixel="false" AnchorPane.bottomAnchor="609.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="frequencyArrow" fitHeight="22.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icon_arrow_up.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="comparisonArrow" fitHeight="22.0" fitWidth="48.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/icon_arrow_up.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="visibleArrow" fitHeight="22.0" fitWidth="48.0" layoutX="58.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/icon_arrow_up.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="endecryptArrow" fitHeight="22.0" fitWidth="48.0" layoutX="106.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/icon_arrow_up.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="22.0" fitWidth="48.0" layoutX="154.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/icon_arrow_up.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="frequencyPanel" layoutX="10.0" layoutY="80.0" prefHeight="480.0" prefWidth="550.0" style="-fx-background-color: #0E192B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="860.0" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#onFrecuencyAnalisysButtonClicked" prefHeight="27.0" prefWidth="270.0" style="-fx-background-color: #5bd36d#5bd36d;" text="Start Frequency Analysis" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+            <Separator layoutX="229.0" layoutY="49.0" opacity="0.3" prefHeight="2.0" prefWidth="411.0" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="49.0" />
+            <JFXTextArea fx:id="encryptedTextArea" editable="false" focusColor="#0e192b" focusTraversable="false" layoutX="10.0" layoutY="10.0" prefHeight="530.0" prefWidth="401.0" style="-fx-background-color: #FFFFFF;" unFocusColor="#0e192b" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="444.0" AnchorPane.topAnchor="100.0" />
+            <JFXTextArea fx:id="originalTextArea" editable="false" focusColor="#0e192b" focusTraversable="false" layoutX="536.0" layoutY="94.0" prefHeight="426.0" prefWidth="297.0" style="-fx-background-color: #FFFFFF;" unFocusColor="#0e192b" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="59.0" prefHeight="23.0" prefWidth="136.0" text="Encryted Text" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="587.0" layoutY="62.0" prefHeight="23.0" prefWidth="122.0" text="Original Text" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="comparisonPanel" layoutX="10.0" layoutY="80.0" prefHeight="480.0" prefWidth="550.0" style="-fx-background-color: #0E192B;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="860.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#onComparisonButtonClicked" prefHeight="27.0" prefWidth="270.0" style="-fx-background-color: #5bd36d#5bd36d;" text="Start Comparison" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></JFXButton>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+            <Separator layoutX="229.0" layoutY="49.0" opacity="0.3" prefHeight="2.0" prefWidth="411.0" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="49.0" />
+            <JFXTextArea fx:id="comparisonTextArea" editable="false" focusColor="#0e192b" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #FFFFFF;" unFocusColor="#0e192b" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="65.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="visiblePanel" layoutX="10.0" layoutY="80.0" prefHeight="480.0" prefWidth="550.0" style="-fx-background-color: #0E192B;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="860.0" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#onVisibleButtonClicked" prefHeight="27.0" prefWidth="270.0" style="-fx-background-color: #5bd36d#5bd36d;" text="Create and read Decrypted file" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></JFXButton>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+            <Separator layoutX="229.0" layoutY="49.0" opacity="0.3" prefHeight="2.0" prefWidth="411.0" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="49.0" />
+            <JFXTextArea fx:id="decryptedFileTextArea" editable="false" focusColor="#0e192b" style="-fx-background-color: #FFFFFF;" unFocusColor="#0e192b" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="65.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="endecryptPanel" layoutX="20.0" layoutY="90.0" prefHeight="480.0" prefWidth="550.0" style="-fx-background-color: #0E192B;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="21.0" prefHeight="25.0" prefWidth="291.0" text="TEXT TO ENCRYPT-DECRYPT:" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="564.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="560.0" AnchorPane.topAnchor="21.0">
+               <font>
+                  <Font name="System Font" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="endeText" focusColor="#5bd36d" prefHeight="25.0" prefWidth="544.0" promptText="Write a text" style="-fx-text-fill: #5bd36d#5bd36d;" AnchorPane.bottomAnchor="563.0" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXRadioButton fx:id="encryptRadioButton" layoutX="20.0" layoutY="58.0" prefHeight="33.0" prefWidth="104.0" text="ENCRYPT" textFill="WHITE" AnchorPane.bottomAnchor="519.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="731.0" AnchorPane.topAnchor="58.0" />
+            <JFXRadioButton fx:id="decryptRadioButton" layoutX="21.0" layoutY="99.0" prefHeight="33.0" prefWidth="104.0" text="DECRYPT" textFill="WHITE" />
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="78.0" onAction="#onConvertButtonClicked" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #5bd36d#5bd36d;" text="CONVERT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXButton>
+            <JFXTextField fx:id="endeOutText" editable="false" focusColor="#5cd16c" focusTraversable="false" layoutX="305.0" layoutY="64.0" prefHeight="27.0" prefWidth="525.0" style="-fx-text-fill: #5bd36d#5bd36d;" AnchorPane.bottomAnchor="519.0" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="64.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <Separator layoutX="43.0" layoutY="157.0" opacity="0.3" prefHeight="15.0" prefWidth="757.0" AnchorPane.bottomAnchor="455.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="140.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="198.0" prefHeight="25.0" prefWidth="291.0" text="MANUAL SWITCHING LETTERS:" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="387.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="556.0" AnchorPane.topAnchor="198.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="159.0" prefHeight="25.0" prefWidth="155.0" text="Original letter" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="426.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="385.0" AnchorPane.topAnchor="159.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="224.0" prefHeight="25.0" prefWidth="155.0" text="Encrypted letter" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="385.0" AnchorPane.topAnchor="224.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="originalLetterText" alignment="CENTER" focusColor="#5bd36d" layoutX="481.0" layoutY="161.0" style="-fx-text-fill: #5bd36d#5bd36d #5bd36d#5bd36d;" AnchorPane.bottomAnchor="422.0" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="161.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="encryptLetterText" alignment="CENTER" focusColor="#5bd36d" layoutX="478.0" layoutY="211.0" style="-fx-text-fill: #5bd36d#5bd36d #5bd36d#5bd36d;" AnchorPane.bottomAnchor="372.0" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="211.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="690.0" layoutY="194.0" onAction="#onSwitchLettersButtonClicked" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #5bd36d#5bd36d;" text="SWITCH LETTERS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

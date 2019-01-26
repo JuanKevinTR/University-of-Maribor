@@ -1,0 +1,24 @@
+#########################################
+
+    J. Kevin Trujillo Rodríguez
+
+#########################################
+    Import two libraries:
+        libraries/jfoenix-9.0.6.jar
+        libraries/javafx-sdk-11.0.1/lib
+
+    Prepare to execute this program:
+        Run -->
+        Edit Configurations... -->
+        VM Options: --module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml
+            PATH_TO_FX = path-in-your-computer
+                Terminal en MacOS
+                    > vim ~/.bash_profile
+                    > export PATH_TO_FX=/YOUR-COMPUTER-PATH/javafx-sdk-11.0.1/lib
+
+
+    Encrypt and Decrypt format used:
+        Java Class Cipher by default...
+            AES = AES/CBC/PKCS5Padding (128) - It works for 192 and 256 bytes as well
+            RSA = RSA/ECB/PKCS1Padding (1024, 2048)
+
