@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="51.0" prefWidth="169.0" style="-fx-background-color: #0E192B;" AnchorPane.bottomAnchor="449.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="481.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="116.0" layoutY="7.0" prefHeight="8.0" prefWidth="48.0" text="Location:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-30.0" layoutY="24.0" opacity="0.2" prefWidth="200.0" rotate="16.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="24.0" />
+            <Label layoutX="14.0" layoutY="34.0" prefHeight="17.0" prefWidth="112.0" text="Wheather conditions:" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="169.0" prefHeight="51.0" prefWidth="478.0" style="-fx-background-color: #0E192B;" AnchorPane.bottomAnchor="449.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="mariborButton" layoutX="11.0" layoutY="12.0" onAction="#onMariborButtonClicked" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #00825a;" text="Maribor, Slovenia" textFill="WHITE" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="12.0" />
+            <JFXButton fx:id="laspalmasdegcButton" layoutX="235.0" layoutY="12.0" onAction="#onLasPalmasDeGCButtonClicked" style="-fx-background-color: #00825a;" text="Las Palmas de Gran Canaria, Spain" textFill="WHITE" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="51.0" prefHeight="447.0" prefWidth="169.0" style="-fx-background-color: #0E192B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="481.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <JFXButton fx:id="currentButton" alignment="CENTER" disable="true" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#currentCondition" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #213b65;" text="Current" textFill="WHITE" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="forecast5Day3HourButton" alignment="CENTER" disable="true" focusTraversable="false" layoutX="12.0" layoutY="50.0" onAction="#forecast5Day3Hour" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #213b65;" text="5 day / 3 hour forecast" textFill="WHITE" AnchorPane.bottomAnchor="371.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="51.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="precipitationMapButton" alignment="CENTER" disable="true" focusTraversable="false" layoutX="12.0" layoutY="90.0" onAction="#precipitationMap" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #213b65;" text="Precipitation Map" textFill="WHITE" AnchorPane.bottomAnchor="332.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="90.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="temperatureMapButton" alignment="CENTER" disable="true" focusTraversable="false" layoutX="12.0" layoutY="129.0" onAction="#temperatureMap" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #213b65;" text="Temperature Map" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="pressureMapButton" accessibleText="Accuulated precipitation map" alignment="CENTER" disable="true" focusTraversable="false" layoutX="12.0" layoutY="168.0" onAction="#pressureMap" prefHeight="27.0" prefWidth="145.0" scaleZ="12.0" style="-fx-background-color: #213b65;" text="Pressure Map" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="windSpeedMapButton" accessibleText="Accuulated precipitation map" alignment="CENTER" disable="true" focusTraversable="false" layoutX="12.0" layoutY="207.0" onAction="#windSpeedMap" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #213b65;" text="Wind Speed Map" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cloudsMapButton" accessibleText="Accuulated precipitation map" alignment="CENTER" disable="true" focusTraversable="false" layoutX="12.0" layoutY="246.0" onAction="#cloudsMap" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #213b65;" text="Clouds Map" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exitButton" alignment="CENTER" layoutX="12.0" layoutY="211.0" onAction="#onExitClicked" opacity="0.6" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #bf3636;" text="Exit" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="421.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="5.0" layoutY="285.0" opacity="0.3" prefWidth="200.0" AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="285.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainDisplay" layoutX="169.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <Label fx:id="mainDisplayLabel" layoutX="89.0" layoutY="210.0" prefHeight="29.0" prefWidth="304.0" text="Select one location, please" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="210.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="headerDisplay" layoutX="169.0" layoutY="51.0" prefHeight="51.0" prefWidth="481.0" style="-fx-background-color: #6e757f;" visible="false" AnchorPane.bottomAnchor="398.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <Label fx:id="currentTownLabel" alignment="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="17.0" prefWidth="337.0" text="Weather in Las Palmas de Gran Canaria, ES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="radioCelsius" cacheShape="false" focusTraversable="false" layoutX="373.0" layoutY="17.0" onAction="#onCelsiusClicked" text="°C" textFill="WHITE" AnchorPane.leftAnchor="373.0" />
+            <JFXRadioButton fx:id="radioFahrenheit" cacheShape="false" focusTraversable="false" layoutX="427.0" layoutY="17.0" onAction="#onFahrenheitClicked" text="°F" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="427.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="17.0" />
+            <Separator opacity="0.4" prefWidth="200.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="45.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="currentDisplay" layoutX="169.0" layoutY="102.0" prefHeight="395.0" prefWidth="481.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <ImageView fx:id="currentImage" fitHeight="50.0" fitWidth="50.0" layoutX="177.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="334.0" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@images/weatherDefault.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="currentTemperatureLabel" layoutX="227.0" layoutY="14.0" prefHeight="50.0" prefWidth="78.0" text="20 °C" AnchorPane.bottomAnchor="334.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentDateLabel" alignment="TOP_LEFT" layoutY="14.0" prefHeight="50.0" prefWidth="120.0" text="04:23 Dec 12" AnchorPane.bottomAnchor="348.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="361.0" AnchorPane.topAnchor="5.0" />
+            <Label layoutX="28.0" layoutY="64.0" prefHeight="50.0" prefWidth="78.0" text="Sunrise:" AnchorPane.bottomAnchor="284.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="64.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentSunriseLabel" layoutX="106.0" layoutY="64.0" prefHeight="50.0" prefWidth="120.0" text="6:31 AM" />
+            <Label layoutX="28.0" layoutY="114.0" prefHeight="50.0" prefWidth="78.0" text="Sunset:" />
+            <Label fx:id="currentSunsetLabel" layoutX="106.0" layoutY="114.0" prefHeight="50.0" prefWidth="120.0" text="7:51 PM" />
+            <Label layoutX="28.0" layoutY="164.0" prefHeight="50.0" prefWidth="78.0" text="Humidity:" />
+            <Label fx:id="currentHumidityLabel" layoutX="106.0" layoutY="164.0" prefHeight="50.0" prefWidth="120.0" text="68 %" />
+            <Label layoutX="28.0" layoutY="214.0" prefHeight="50.0" prefWidth="78.0" text="Visibility:" />
+            <Label fx:id="currentVisibilityLabel" layoutX="106.0" layoutY="214.0" prefHeight="50.0" prefWidth="120.0" text="10000 meters" />
+            <Label layoutX="28.0" layoutY="264.0" prefHeight="50.0" prefWidth="78.0" text="Pressure:" />
+            <Label fx:id="currentPressureLabel" layoutX="106.0" layoutY="264.0" prefHeight="50.0" prefWidth="120.0" text="1024 hPa" />
+            <Label layoutX="28.0" layoutY="314.0" prefHeight="50.0" prefWidth="78.0" text="Lattitude:" />
+            <Label fx:id="currentLattitudeLabel" layoutX="106.0" layoutY="314.0" prefHeight="50.0" prefWidth="120.0" text="28.1" />
+            <Label layoutX="255.0" layoutY="64.0" prefHeight="50.0" prefWidth="78.0" text="Temp. Min:" />
+            <Label fx:id="currentTempMinLabel" layoutX="333.0" layoutY="64.0" prefHeight="50.0" prefWidth="120.0" text="19 °C" />
+            <Label layoutX="255.0" layoutY="114.0" prefHeight="50.0" prefWidth="78.0" text="Temp. Max:" />
+            <Label fx:id="currentTempMaxLabel" layoutX="333.0" layoutY="114.0" prefHeight="50.0" prefWidth="120.0" text="20 °C" />
+            <Label layoutX="255.0" layoutY="164.0" prefHeight="50.0" prefWidth="78.0" text="Cloudiness:" />
+            <Label fx:id="currentCloudinessLabel" layoutX="333.0" layoutY="164.0" prefHeight="50.0" prefWidth="120.0" text="Scattered clouds" />
+            <Label layoutX="255.0" layoutY="214.0" prefHeight="50.0" prefWidth="78.0" text="Wind:" />
+            <Label fx:id="currentWindSpeedLabel" layoutX="333.0" layoutY="214.0" prefHeight="50.0" prefWidth="120.0" text="7.2 m/s" />
+            <Label layoutX="255.0" layoutY="264.0" prefHeight="50.0" prefWidth="78.0" text="Wind Deg:" />
+            <Label fx:id="currentWindDirectionLabel" layoutX="333.0" layoutY="264.0" prefHeight="50.0" prefWidth="120.0" text="28.1" />
+            <Label layoutX="255.0" layoutY="314.0" prefHeight="50.0" prefWidth="78.0" text="Longitude:" />
+            <Label fx:id="currentLongitudeLabel" layoutX="333.0" layoutY="314.0" prefHeight="50.0" prefWidth="120.0" text="-15.41" />
+         </children></AnchorPane>
+      <ScrollPane fx:id="forecast5Day3HourDisplay" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="464.0">
+               <children>
+                  <Label fx:id="FDate0" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="31.12.2018" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="26.0" prefWidth="465.0" AnchorPane.bottomAnchor="501.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Label fx:id="FHour0" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour1" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour2" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour3" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour4" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour5" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour6" alignment="CENTER" prefHeight="27.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="FHour7" alignment="CENTER" prefHeight="29.0" prefWidth="60.0" text="22:00">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="40.0" prefHeight="76.0" prefWidth="465.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage0" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp0" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind0" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress0" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage1" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp1" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind1" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress1" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage2" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp2" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind2" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress2" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="80.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage3" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp3" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind3" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress3" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage4" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp4" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind4" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress4" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage5" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp5" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind5" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress5" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage6" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp6" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind6" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress6" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="220.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage7" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp7" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind7" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress7" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label fx:id="FDate1" alignment="CENTER" layoutY="117.0" prefHeight="27.0" prefWidth="60.0" text="31.12.2018" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="-1.0" layoutY="139.0" prefHeight="76.0" prefWidth="465.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage8" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp8" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind8" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress8" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage9" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp9" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind9" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress9" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage10" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp10" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind10" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress10" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="80.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage11" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp11" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind11" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress11" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage12" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp12" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind12" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress12" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage13" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp13" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind13" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress13" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage14" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp14" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind14" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress14" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="220.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage15" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp15" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind15" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress15" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label fx:id="FDate2" alignment="CENTER" layoutX="-1.0" layoutY="215.0" prefHeight="27.0" prefWidth="60.0" text="31.12.2018" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="-1.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="-1.0" layoutY="235.0" prefHeight="76.0" prefWidth="465.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage16" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp16" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind16" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress16" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage17" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp17" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind17" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress17" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage18" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp18" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind18" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress18" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="80.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage19" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp19" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind19" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress19" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage20" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp20" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind20" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress20" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage21" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp21" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind21" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress21" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage22" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp22" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind22" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress22" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="220.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage23" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp23" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind23" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress23" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label fx:id="FDate3" alignment="CENTER" layoutX="1.0" layoutY="311.0" prefHeight="27.0" prefWidth="60.0" text="31.12.2018">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="-2.0" layoutY="332.0" prefHeight="76.0" prefWidth="465.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage24" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp24" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind24" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress24" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage25" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp25" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind25" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress25" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage26" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp26" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind26" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress26" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="80.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage27" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp27" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind27" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress27" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage28" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp28" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind28" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress28" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage29" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp29" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind29" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress29" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage30" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp30" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind30" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress30" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="220.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage31" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp31" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind31" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress31" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label fx:id="FDate4" alignment="CENTER" layoutX="1.0" layoutY="408.0" prefHeight="27.0" prefWidth="60.0" text="31.12.2018">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="-2.0" layoutY="430.0" prefHeight="76.0" prefWidth="465.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage32" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp32" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind32" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress32" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage33" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp33" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind33" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress33" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage34" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp34" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind34" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress34" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="80.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage35" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp35" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind35" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress35" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage36" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp36" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind36" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress36" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage37" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp37" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind37" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress37" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage38" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp38" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind38" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress38" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="220.0" layoutY="10.0" prefHeight="100.0" prefWidth="60.0">
+                           <children>
+                              <ImageView fx:id="FImage39" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/10n.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="FTemp39" alignment="CENTER" text="18.6 °C">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FWind39" text="14,12 m/h">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="FPress39" text="1030.14">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <AnchorPane fx:id="precipitationMapDisplay" layoutX="189.0" layoutY="122.0" prefHeight="395.0" prefWidth="481.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <WebView fx:id="precipitationWebView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="temperatureMapDisplay" layoutX="199.0" layoutY="51.0" prefHeight="449.0" prefWidth="481.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <WebView fx:id="temperatureWebView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="pressureMapDisplay" layoutX="209.0" layoutY="51.0" prefHeight="449.0" prefWidth="481.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <WebView fx:id="pressureWebView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="windSpeedMapDisplay" layoutX="179.0" layoutY="61.0" prefHeight="449.0" prefWidth="481.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <WebView fx:id="windSpeedWebView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="cloudsMapDisplay" layoutX="189.0" layoutY="71.0" prefHeight="449.0" prefWidth="481.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <WebView fx:id="cloudsWebView" layoutX="-14.0" layoutY="-23.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+{
+    "coord":{
+        "lon":-15.41, "lat":28.1
+    },"weather":[{
+        "id":801, "main":"Clouds", "description":"few clouds", "icon":"02d"
+    }],
+    "base":"stations",
+    "main":{
+        "temp":22, "pressure":1026, "humidity":68, "temp_min":22, "temp_max":22
+    },
+    "visibility":10000,
+    "wind":{
+        "speed":9.3, "deg":30
+    },"clouds":{
+        "all":20
+    },
+    "dt":1544529600,
+    "sys":{
+        "type":1, "id":2378, "message":0.3056, "country":"ES", "sunrise":1544514199, "sunset":1544551611
+    },
+    "id":2515270,
+    "name":"Las Palmas de Gran Canaria",
+    "cod":200
+}
+
+###########################################################
+
+    City                    ==> name
+    Country                 ==> sys.country
+        Format: "city, country"
+
+    image                   ==> main.icon
+    Temperature             ==> main.temp                       °C (units=metric) - °F(units=imperial)
+    Text                    ==> main.description
+    Date                    ==> dt                              (Convert to time -> unix, UTC)
+
+    TABLE:
+        Wind:
+            Direction       ==> wind.deg
+            Speed           ==> wind.speed
+        Cloudiness:
+            Text            ==> main.description
+        Pressure:
+            Pressure        ==> main.pressure                   hPa
+        Humidity:
+            Humidity        ==> main.humidity                   %
+        Sunrise:
+            Sunrise         ==> sys.sunrise                     (Convert to time -> unix, UTC)
+        Sunset:
+            Sunset          ==> sys.sunset                      (Convert to time -> unix, UTC)
+        Geo coords:
+            Lattitude       ==> coord.lat
+            Longitude       ==> coord.lon
+
+
+    Visibility              ==> visibility                      meter
+
+    Temperature min         ==> main.temp_min                   °C (units=metric) - °F(units=imperial)
+    Temperature max         ==> main.temp_max                   °C (units=metric) - °F(units=imperial)
+
+###########################################################
+
+
+
