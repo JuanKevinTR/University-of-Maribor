@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56924691-a978-4ad6-b545-d9aca462406e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>move</find>
+      <find>dateWritten</find>
+      <find>system</find>
+      <find>treeMap</find>
+      <find>sdf</find>
+      <find>dateToSend</find>
+      <find>long</find>
+      <find>successor</find>
+      <find>isNotEmptyTree</find>
+      <find>searchIndexInTree</find>
+      <find>remove</find>
+      <find>randomDate</find>
+      <find>//</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/MovieTree.java" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/Movie.java" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/benchmark_report.txt" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/Controller.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MovieIMDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieIMDB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieIMDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieIMDB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieIMDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieIMDB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="juankevintrujillo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553780923615" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.juankevintrujillo.Main" />
+      <module name="MovieIMDB" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56924691-a978-4ad6-b545-d9aca462406e" name="Default Changelist" comment="" />
+      <created>1553568775501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553568775501</updated>
+      <workItem from="1553568776899" duration="4319000" />
+      <workItem from="1553652327449" duration="28552000" />
+      <workItem from="1553778326966" duration="47000" />
+      <workItem from="1553780329804" duration="602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33520000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19466881" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.07260274" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.34657535" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19466881" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.37260273" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.34657535" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Node.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Movie.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/test_files/IMDB_date_name_full_sorted.list">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/test_files/IMDB_date_name_mini_sorted.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-893">
+          <caret line="146" column="19" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/test_files/IMDB_date_name_full.list">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/test_files/IMDB_date_name_mini.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/benchmark_report.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="394" selection-start-line="394" selection-end-line="394" />
+          <folding>
+            <element signature="docComment;method#Controller#0;class#Controller#0" />
+            <element signature="docComment;method#insertMovie#0;class#Controller#0" />
+            <element signature="method#insertMovie#0;class#Controller#0" />
+            <element signature="e#732#872#1" />
+            <element signature="e#878#1058#1" />
+            <element signature="docComment;method#printAllMovies#0;class#Controller#0" />
+            <element signature="method#printAllMovies#0;class#Controller#0" />
+            <element signature="e#1302#1591#1" />
+            <element signature="e#1515#1581#1" />
+            <element signature="docComment;method#searchMovies#0;class#Controller#0" />
+            <element signature="method#searchMovies#0;class#Controller#0" />
+            <element signature="e#1832#2056#1" />
+            <element signature="e#1980#2046#1" />
+            <element signature="e#2062#2130#1" />
+            <element signature="method#searchIndexInTree#0;class#Controller#0" />
+            <element signature="e#2388#2536#1" />
+            <element signature="e#2482#2526#1" />
+            <element signature="docComment;method#printMinMaxDate#0;class#Controller#0" />
+            <element signature="method#printMinMaxDate#0;class#Controller#0" />
+            <element signature="docComment;method#printSuccessorPredecessor#0;class#Controller#0" />
+            <element signature="method#printSuccessorPredecessor#0;class#Controller#0" />
+            <element signature="e#2983#4196#1" />
+            <element signature="e#3186#3441#1" />
+            <element signature="e#3231#3300#1" />
+            <element signature="e#3333#3427#1" />
+            <element signature="e#3567#3804#1" />
+            <element signature="e#3833#4001#1" />
+            <element signature="e#4028#4186#1" />
+            <element signature="e#4202#4270#1" />
+            <element signature="docComment;method#removeMovies#0;class#Controller#0" />
+            <element signature="method#removeMovies#0;class#Controller#0" />
+            <element signature="e#4454#4544#1" />
+            <element signature="e#4550#4618#1" />
+            <element signature="docComment;method#loadMoviesFromFile#0;class#Controller#0" />
+            <element signature="method#loadMoviesFromFile#0;class#Controller#0" />
+            <element signature="e#4734#5472#0" />
+            <element signature="e#4975#5438#1" />
+            <element signature="e#5070#5424#1" />
+            <element signature="e#5259#5346#1" />
+            <element signature="e#5495#5548#0" />
+            <element signature="docComment;method#benchmark#0;class#Controller#0" />
+            <element signature="method#benchmark#0;class#Controller#0" />
+            <element signature="e#5848#10840#0" />
+            <element signature="e#7010#7202#1" />
+            <element signature="e#7392#7860#1" />
+            <element signature="e#7532#7758#1" />
+            <element signature="e#7648#7740#1" />
+            <element signature="e#7764#7846#1" />
+            <element signature="e#9280#9472#1" />
+            <element signature="e#9580#10048#1" />
+            <element signature="e#9720#9946#1" />
+            <element signature="e#9836#9928#1" />
+            <element signature="e#9952#10034#1" />
+            <element signature="e#10863#10907#0" />
+            <element signature="docComment;method#randBetween#0;class#Controller#0" />
+            <element signature="method#randBetween#0;class#Controller#0" />
+            <element signature="method#randomDate#0;class#Controller#0" />
+            <element signature="e#11559#11619#1" />
+            <element signature="e#11625#11675#1" />
+            <element signature="e#11811#11869#1" />
+            <element signature="e#11875#11923#1" />
+            <element signature="docComment;method#intToDate#0;class#Controller#0" />
+            <element signature="method#intToDate#0;class#Controller#0" />
+            <element signature="e#12229#12428#0" />
+            <element signature="e#12454#12553#0" />
+            <element signature="docComment;method#isNotEmptyTree#0;class#Controller#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
+          <folding>
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="e#577#600#0" />
+            <element signature="e#1299#6813#1" />
+            <element signature="e#2095#6665#0" />
+            <element signature="e#2256#6650#0" />
+            <element signature="e#2428#2624#1" />
+            <element signature="e#2630#2724#1" />
+            <element signature="e#2841#2925#1" />
+            <element signature="e#2931#3014#1" />
+            <element signature="e#3131#3530#1" />
+            <element signature="e#3293#3396#1" />
+            <element signature="e#3402#3504#1" />
+            <element signature="e#3536#3619#1" />
+            <element signature="e#3736#3821#1" />
+            <element signature="e#3827#3910#1" />
+            <element signature="e#4027#4439#1" />
+            <element signature="e#4189#4305#1" />
+            <element signature="e#4311#4413#1" />
+            <element signature="e#4445#4528#1" />
+            <element signature="e#4645#5044#1" />
+            <element signature="e#4807#4910#1" />
+            <element signature="e#4916#5018#1" />
+            <element signature="e#5050#5133#1" />
+            <element signature="e#5438#6222#0" />
+            <element signature="e#6686#6803#0" />
+            <element signature="method#askForIntValue#0;class#Main#0" />
+            <element signature="method#askForStringValue#0;class#Main#0" />
+            <element signature="method#isADateValid#0;class#Main#0" />
+            <element signature="e#7207#7244#1" />
+            <element signature="e#7828#7865#0" />
+            <element signature="method#showFile#0;class#Main#0" />
+            <element signature="e#8294#8360#1" />
+            <element signature="method#errorMessage#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

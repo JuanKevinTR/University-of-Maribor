@@ -1,0 +1,33 @@
+Total time of reading the file 'IMDB_date_name_mini.list' and inserting all movies into the tree
+	==> Start: 1553680481615 milliseconds	==> Finish: 1553680482208 milliseconds	==> Total time: 0.593 seconds
+	==> Random dates:	15.10.1911	23.09.1973	02.05.1992	17.08.1975	15.08.1949	
+		==> 15.10.1911
+			==> Not founded!
+		==> 23.09.1973
+			==> Not founded!
+		==> 02.05.1992
+			==> Not founded!
+		==> 17.08.1975
+			==> Not founded!
+		==> 15.08.1949
+			==> Not founded!
+	==> Total time of searching 5 random days: 0.009 seconds
+
+Total time of reading the file 'IMDB_date_name_mini_sorted.list' and inserting all movies into the tree
+	==> Start: 1553680482305 milliseconds	==> Finish: 1553680482858 milliseconds	==> Total time: 0.553 seconds
+	==> Random dates:	27.10.1974	16.04.1990	17.02.1963	28.09.1919	27.07.1936	
+		==> 27.10.1974
+			==> Not founded!
+		==> 16.04.1990
+			==> Not founded!
+		==> 17.02.1963
+			==> Not founded!
+		==> 28.09.1919
+			==> Not founded!
+		==> 27.07.1936
+			==> Not founded!
+	==> Total time of searching 5 random days: 0.002 seconds
+
+
+Regarding to 'IMDB_date_name_full.list' and 'IMDB_date_name_full_sorted.list' files, both files have many movies and 
+reading and inserting them, are too slow

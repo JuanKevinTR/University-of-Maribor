@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d22ad311-27dc-4b27-aaef-58bc8b877e07" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+              <folding>
+                <element signature="method#main#0;class#Main#0" />
+                <element signature="e#294#317#0" />
+                <element signature="e#888#6417#1" />
+                <element signature="e#1604#6318#0" />
+                <element signature="e#1729#6303#0" />
+                <element signature="e#2004#2244#1" />
+                <element signature="e#2250#2352#1" />
+                <element signature="e#2469#2977#1" />
+                <element signature="e#2706#2820#1" />
+                <element signature="e#2826#2951#1" />
+                <element signature="e#2983#3085#1" />
+                <element signature="e#3202#3707#1" />
+                <element signature="e#3398#3568#1" />
+                <element signature="e#3574#3681#1" />
+                <element signature="e#3713#3815#1" />
+                <element signature="e#3932#4015#1" />
+                <element signature="e#4021#4123#1" />
+                <element signature="e#4240#4656#1" />
+                <element signature="e#4381#4516#1" />
+                <element signature="e#4522#4629#1" />
+                <element signature="e#4662#4764#1" />
+                <element signature="e#4881#5532#1" />
+                <element signature="e#5023#5130#1" />
+                <element signature="e#5136#5506#1" />
+                <element signature="e#5213#5355#1" />
+                <element signature="e#5361#5476#1" />
+                <element signature="e#5538#5640#1" />
+                <element signature="e#5858#6040#1" />
+                <element signature="e#6046#6148#1" />
+                <element signature="e#6339#6407#0" />
+                <element signature="method#askForValue#0;class#Main#0" />
+                <element signature="method#insertForTesting#0;class#Main#0" />
+                <element signature="e#6645#6675#0" />
+                <element signature="method#errorMessage#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+              <folding>
+                <element signature="docComment;method#BinaryTree#0;class#BinaryTree#0" />
+                <element signature="docComment;method#insert_value#0;class#BinaryTree#0" />
+                <element signature="method#insert_value#0;class#BinaryTree#0" />
+                <element signature="e#568#1430#1" />
+                <element signature="e#654#1420#1" />
+                <element signature="e#728#981#1" />
+                <element signature="e#809#963#1" />
+                <element signature="e#1013#1268#1" />
+                <element signature="e#1095#1250#1" />
+                <element signature="e#1274#1406#1" />
+                <element signature="e#1436#1479#1" />
+                <element signature="docComment;method#ordered_print_values#0;class#BinaryTree#0" />
+                <element signature="method#ordered_print_values#0;class#BinaryTree#0" />
+                <element signature="e#1715#1870#1" />
+                <element signature="docComment;method#print_values#0;class#BinaryTree#0" />
+                <element signature="method#print_values#0;class#BinaryTree#0" />
+                <element signature="e#2002#2135#1" />
+                <element signature="e#2171#2306#1" />
+                <element signature="docComment;method#search_node#0;class#BinaryTree#0" />
+                <element signature="method#search_node#0;class#BinaryTree#0" />
+                <element signature="e#2494#2654#1" />
+                <element signature="e#2600#2644#1" />
+                <element signature="docComment;method#print_min_max#0;class#BinaryTree#0" />
+                <element signature="method#print_min_max#0;class#BinaryTree#0" />
+                <element signature="method#minimum#0;class#BinaryTree#0" />
+                <element signature="e#3027#3067#1" />
+                <element signature="method#maximum#0;class#BinaryTree#0" />
+                <element signature="e#3165#3206#1" />
+                <element signature="docComment;method#print_successor_predecessor#0;class#BinaryTree#0" />
+                <element signature="method#print_successor_predecessor#0;class#BinaryTree#0" />
+                <element signature="method#getsuccessor#0;class#BinaryTree#0" />
+                <element signature="docComment;method#remove_node#0;class#BinaryTree#0" />
+                <element signature="method#remove_node#0;class#BinaryTree#0" />
+                <element signature="method#getReplaceNode#0;class#BinaryTree#0" />
+                <element signature="method#previously_deleted#0;class#BinaryTree#0" />
+                <element signature="method#add_deleted_key_again#0;class#BinaryTree#0" />
+                <element signature="docComment;method#isNotEmptyTree#0;class#BinaryTree#0" />
+                <element signature="method#print_all_nodes#0;class#BinaryTree#0" />
+                <element signature="method#printFormat#0;class#BinaryTree#0" />
+                <element signature="method#getValuesAllNodes#0;class#BinaryTree#0" />
+                <element signature="method#addKey#0;class#BinaryTree#0" />
+                <element signature="method#isKeyInside#0;class#BinaryTree#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>child</find>
+      <find>Replace</find>
+      <find>children</find>
+      <find>search</find>
+      <find>sear</find>
+      <find>print_all_nodes</find>
+      <find>valor</find>
+      <find>keysOrdered</find>
+      <find>WARNING</find>
+      <find>out</find>
+      <find>ou</find>
+      <find>s</find>
+      <find>else</find>
+      <find>min</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/juankevintrujillo/BinaryTree.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BinarySearchTree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BinarySearchTree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BinarySearchTree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BinarySearchTree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BinarySearchTree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BinarySearchTree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="juankevintrujillo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553780308113" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.juankevintrujillo.Main" />
+      <module name="BinarySearchTree" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d22ad311-27dc-4b27-aaef-58bc8b877e07" name="Default Changelist" comment="" />
+      <created>1553194723793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553194723793</updated>
+      <workItem from="1553194725146" duration="662000" />
+      <workItem from="1553208041590" duration="1376000" />
+      <workItem from="1553269617842" duration="488000" />
+      <workItem from="1553346131072" duration="126000" />
+      <workItem from="1553466218124" duration="22000" />
+      <workItem from="1553466307279" duration="24063000" />
+      <workItem from="1553538379643" duration="19390000" />
+      <workItem from="1553626899517" duration="171000" />
+      <workItem from="1553653104607" duration="1144000" />
+      <workItem from="1553683449726" duration="1653000" />
+      <workItem from="1553778327283" duration="37000" />
+      <workItem from="1553780093686" duration="231000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="49363000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.16882068" />
+      <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" weight="0.17689823" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.80547947" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.16962843" />
+      <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" weight="0.17689823" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.80547947" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BinarySearchTree.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="docComment;method#Node#0;class#Node#0" />
+            <element signature="method#Node#0;class#Node#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;method#BinaryTree#0;class#BinaryTree#0" />
+            <element signature="docComment;method#insert_value#0;class#BinaryTree#0" />
+            <element signature="method#insert_value#0;class#BinaryTree#0" />
+            <element signature="e#568#1430#1" />
+            <element signature="e#654#1420#1" />
+            <element signature="e#728#981#1" />
+            <element signature="e#809#963#1" />
+            <element signature="e#1013#1268#1" />
+            <element signature="e#1095#1250#1" />
+            <element signature="e#1274#1406#1" />
+            <element signature="e#1436#1479#1" />
+            <element signature="docComment;method#ordered_print_values#0;class#BinaryTree#0" />
+            <element signature="method#ordered_print_values#0;class#BinaryTree#0" />
+            <element signature="e#1715#1870#1" />
+            <element signature="docComment;method#print_values#0;class#BinaryTree#0" />
+            <element signature="method#print_values#0;class#BinaryTree#0" />
+            <element signature="e#2002#2135#1" />
+            <element signature="e#2171#2306#1" />
+            <element signature="docComment;method#search_node#0;class#BinaryTree#0" />
+            <element signature="method#search_node#0;class#BinaryTree#0" />
+            <element signature="e#2494#2654#1" />
+            <element signature="e#2600#2644#1" />
+            <element signature="docComment;method#print_min_max#0;class#BinaryTree#0" />
+            <element signature="method#print_min_max#0;class#BinaryTree#0" />
+            <element signature="method#minimum#0;class#BinaryTree#0" />
+            <element signature="e#3027#3067#1" />
+            <element signature="method#maximum#0;class#BinaryTree#0" />
+            <element signature="e#3165#3206#1" />
+            <element signature="docComment;method#print_successor_predecessor#0;class#BinaryTree#0" />
+            <element signature="method#print_successor_predecessor#0;class#BinaryTree#0" />
+            <element signature="method#getsuccessor#0;class#BinaryTree#0" />
+            <element signature="docComment;method#remove_node#0;class#BinaryTree#0" />
+            <element signature="method#remove_node#0;class#BinaryTree#0" />
+            <element signature="method#getReplaceNode#0;class#BinaryTree#0" />
+            <element signature="method#previously_deleted#0;class#BinaryTree#0" />
+            <element signature="method#add_deleted_key_again#0;class#BinaryTree#0" />
+            <element signature="docComment;method#isNotEmptyTree#0;class#BinaryTree#0" />
+            <element signature="method#print_all_nodes#0;class#BinaryTree#0" />
+            <element signature="method#printFormat#0;class#BinaryTree#0" />
+            <element signature="method#getValuesAllNodes#0;class#BinaryTree#0" />
+            <element signature="method#addKey#0;class#BinaryTree#0" />
+            <element signature="method#isKeyInside#0;class#BinaryTree#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juankevintrujillo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+          <folding>
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="e#294#317#0" />
+            <element signature="e#888#6417#1" />
+            <element signature="e#1604#6318#0" />
+            <element signature="e#1729#6303#0" />
+            <element signature="e#2004#2244#1" />
+            <element signature="e#2250#2352#1" />
+            <element signature="e#2469#2977#1" />
+            <element signature="e#2706#2820#1" />
+            <element signature="e#2826#2951#1" />
+            <element signature="e#2983#3085#1" />
+            <element signature="e#3202#3707#1" />
+            <element signature="e#3398#3568#1" />
+            <element signature="e#3574#3681#1" />
+            <element signature="e#3713#3815#1" />
+            <element signature="e#3932#4015#1" />
+            <element signature="e#4021#4123#1" />
+            <element signature="e#4240#4656#1" />
+            <element signature="e#4381#4516#1" />
+            <element signature="e#4522#4629#1" />
+            <element signature="e#4662#4764#1" />
+            <element signature="e#4881#5532#1" />
+            <element signature="e#5023#5130#1" />
+            <element signature="e#5136#5506#1" />
+            <element signature="e#5213#5355#1" />
+            <element signature="e#5361#5476#1" />
+            <element signature="e#5538#5640#1" />
+            <element signature="e#5858#6040#1" />
+            <element signature="e#6046#6148#1" />
+            <element signature="e#6339#6407#0" />
+            <element signature="method#askForValue#0;class#Main#0" />
+            <element signature="method#insertForTesting#0;class#Main#0" />
+            <element signature="e#6645#6675#0" />
+            <element signature="method#errorMessage#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
